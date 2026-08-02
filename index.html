@@ -101,7 +101,7 @@
     <div class="max-w-7xl mx-auto px-6 lg:px-8">
       
       <div class="relative">
-        <div id="slider" class="relative min-h-[500px] lg:min-h-[460px]">
+        <div id="slider" class="relative min-h-[470px] lg:min-h-[440px]">
           
           <!-- Slide 1: Custom Software -->
           <div class="slide transition-all duration-700 ease-in-out opacity-100 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
@@ -126,27 +126,29 @@
                 </a>
               </div>
             </div>
+
+            <!-- Slide 1 Card (Updated) -->
             <div class="lg:col-span-5">
-              <div class="bg-gradient-to-tr from-slate-100 to-slate-50 rounded-2xl p-6 border border-slate-200 shadow-2xl">
+              <div class="bg-gradient-to-tr from-slate-100 to-slate-50 rounded-2xl p-6 border border-slate-200 shadow-xl">
                 <div class="flex items-center gap-2 mb-4 pb-3 border-b border-slate-200">
                   <div class="w-3 h-3 rounded-full bg-red-400"></div>
                   <div class="w-3 h-3 rounded-full bg-amber-400"></div>
                   <div class="w-3 h-3 rounded-full bg-emerald-400"></div>
-                  <span class="text-xs text-slate-400 font-mono ml-2">techcandle-core.service</span>
+                  <span class="text-xs text-slate-400 font-mono ml-2">techcandle-workflow.service</span>
                 </div>
                 <div class="space-y-3 font-mono text-xs">
                   <div class="p-3 bg-white rounded-lg border border-slate-100 flex justify-between items-center shadow-sm">
-                    <span data-i18n="code_custom_engine" class="text-slate-600">Custom Software Engine</span>
-                    <span data-i18n="code_status_active" class="px-2 py-0.5 bg-emerald-50 text-emerald-600 rounded font-semibold">Active</span>
+                    <span data-i18n="card1_stack" class="text-slate-600">Tech Stack</span>
+                    <span data-i18n="card1_stack_val" class="px-2 py-0.5 bg-brand-50 text-brand-600 rounded font-semibold">Modern & Scalable</span>
                   </div>
                   <div class="p-3 bg-white rounded-lg border border-slate-100 flex justify-between items-center shadow-sm">
-                    <span class="text-slate-600">Client Integration (Bin Mishal)</span>
-                    <span data-i18n="code_status_connected" class="px-2 py-0.5 bg-emerald-50 text-emerald-600 rounded font-semibold">Connected</span>
+                    <span data-i18n="card1_process" class="text-slate-600">Development Process</span>
+                    <span data-i18n="card1_process_val" class="px-2 py-0.5 bg-emerald-50 text-emerald-600 rounded font-semibold">Agile & Transparent</span>
                   </div>
                   <div class="p-4 bg-slate-900 text-slate-200 rounded-lg space-y-1">
-                    <p class="text-emerald-400">$ techcandle-cli deploy --prod</p>
-                    <p class="text-slate-400">&gt; Building scalable architecture...</p>
-                    <p class="text-slate-400">&gt; Deployment successful (0 downtime).</p>
+                    <p class="text-emerald-400">$ techcandle-cli init-project</p>
+                    <p class="text-slate-400">&gt; Building maintainable codebase...</p>
+                    <p class="text-slate-400">&gt; Ready to scale with your business.</p>
                   </div>
                 </div>
               </div>
@@ -173,17 +175,28 @@
                 </a>
               </div>
             </div>
+
+            <!-- Slide 2 Card (Updated) -->
             <div class="lg:col-span-5">
-              <div class="bg-gradient-to-tr from-slate-50 to-brand-50/30 rounded-2xl p-6 border border-slate-200 shadow-2xl">
+              <div class="bg-gradient-to-tr from-slate-50 to-brand-50/30 rounded-2xl p-6 border border-slate-200 shadow-xl">
                 <div class="p-4 bg-white rounded-xl shadow-sm border border-slate-100 space-y-3">
                   <div class="flex justify-between items-center border-b pb-2">
-                    <span class="font-bold text-slate-800 text-sm">Responsive Web Stack</span>
-                    <span class="text-xs bg-emerald-100 text-emerald-700 px-2 py-0.5 rounded-full font-medium">100/100 Speed</span>
+                    <span data-i18n="card2_head" class="font-bold text-slate-800 text-sm">Web Standard Checklist</span>
+                    <span data-i18n="card2_badge" class="text-xs bg-brand-50 text-brand-600 px-2 py-0.5 rounded-full font-medium">Best Practices</span>
                   </div>
-                  <div class="space-y-2 text-xs text-slate-600">
-                    <div class="flex justify-between"><span>SEO Optimization:</span> <span class="font-semibold text-slate-800">Advanced ✓</span></div>
-                    <div class="flex justify-between"><span>Cross-Browser Compatibility:</span> <span class="font-semibold text-slate-800">Verified ✓</span></div>
-                    <div class="flex justify-between"><span>Security Standard:</span> <span class="font-semibold text-slate-800">SSL Encrypted ✓</span></div>
+                  <div class="space-y-2.5 text-xs text-slate-600">
+                    <div class="flex justify-between">
+                      <span data-i18n="card2_f1">Responsive Layouts:</span>
+                      <span data-i18n="card2_v1" class="font-semibold text-slate-800">Mobile-First Focus ✓</span>
+                    </div>
+                    <div class="flex justify-between">
+                      <span data-i18n="card2_f2">Page Speed:</span>
+                      <span data-i18n="card2_v2" class="font-semibold text-slate-800">Fast Loading Code ✓</span>
+                    </div>
+                    <div class="flex justify-between">
+                      <span data-i18n="card2_f3">SEO & Security Standards:</span>
+                      <span data-i18n="card2_v3" class="font-semibold text-slate-800">Built-in Essentials ✓</span>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -210,16 +223,28 @@
                 </a>
               </div>
             </div>
+
+            <!-- Slide 3 Card (Updated) -->
             <div class="lg:col-span-5">
-              <div class="bg-gradient-to-tr from-slate-50 to-brand-50/30 rounded-2xl p-6 border border-slate-200 shadow-2xl">
+              <div class="bg-gradient-to-tr from-slate-50 to-brand-50/30 rounded-2xl p-6 border border-slate-200 shadow-xl">
                 <div class="p-4 bg-white rounded-xl shadow-sm border border-slate-100 space-y-3">
                   <div class="flex justify-between items-center border-b pb-2">
-                    <span class="font-bold text-slate-800 text-sm">Flutter Application</span>
-                    <span class="text-xs bg-emerald-100 text-emerald-700 px-2 py-0.5 rounded-full font-medium">60 FPS Native</span>
+                    <span data-i18n="card3_head" class="font-bold text-slate-800 text-sm">Flutter Architecture</span>
+                    <span data-i18n="card3_badge" class="text-xs bg-emerald-100 text-emerald-700 px-2 py-0.5 rounded-full font-medium">Cross-Platform</span>
                   </div>
-                  <div class="space-y-2 text-xs text-slate-600">
-                    <div class="flex justify-between"><span>iOS Build:</span> <span class="font-semibold text-slate-800">Verified ✓</span></div>
-                    <div class="flex justify-between"><span>Android Build:</span> <span class="font-semibold text-slate-800">Verified ✓</span></div>
+                  <div class="space-y-2.5 text-xs text-slate-600">
+                    <div class="flex justify-between">
+                      <span data-i18n="card3_f1">Single Codebase Support:</span>
+                      <span data-i18n="card3_v1" class="font-semibold text-slate-800">Android & iOS ✓</span>
+                    </div>
+                    <div class="flex justify-between">
+                      <span data-i18n="card3_f2">User Interface:</span>
+                      <span data-i18n="card3_v2" class="font-semibold text-slate-800">Smooth & Native Feel ✓</span>
+                    </div>
+                    <div class="flex justify-between">
+                      <span data-i18n="card3_f3">Code Maintainability:</span>
+                      <span data-i18n="card3_v3" class="font-semibold text-slate-800">Clean Architecture ✓</span>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -245,20 +270,22 @@
                 </a>
               </div>
             </div>
+
+            <!-- Slide 4 Card (Updated) -->
             <div class="lg:col-span-5">
-              <div class="bg-slate-900 text-white rounded-2xl p-6 border border-slate-800 shadow-2xl space-y-4">
+              <div class="bg-slate-900 text-white rounded-2xl p-6 border border-slate-800 shadow-xl space-y-4">
                 <div class="flex items-center justify-between border-b border-slate-800 pb-3">
-                  <span class="font-bold text-sm text-slate-300">Design System Standards</span>
-                  <span class="text-xs bg-brand-500/20 text-brand-400 px-2.5 py-1 rounded-full border border-brand-500/30">Optimized</span>
+                  <span data-i18n="card4_head" class="font-bold text-sm text-slate-300">Design Focus & Standards</span>
+                  <span data-i18n="card4_badge" class="text-xs bg-brand-500/20 text-brand-400 px-2.5 py-1 rounded-full border border-brand-500/30">User-Centric</span>
                 </div>
                 <div class="space-y-3 text-xs">
                   <div class="flex justify-between items-center p-2.5 bg-slate-800/50 rounded-lg">
-                    <span class="text-slate-400">Accessibility (WCAG)</span>
-                    <span class="text-emerald-400 font-semibold">AAA Rated</span>
+                    <span data-i18n="card4_f1" class="text-slate-400">Prototyping & Flow</span>
+                    <span data-i18n="card4_v1" class="text-emerald-400 font-semibold">Interactive Mockups</span>
                   </div>
                   <div class="flex justify-between items-center p-2.5 bg-slate-800/50 rounded-lg">
-                    <span class="text-slate-400">User Conversion Flow</span>
-                    <span class="text-emerald-400 font-semibold">+45% Avg Boost</span>
+                    <span data-i18n="card4_f2" class="text-slate-400">Design Objective</span>
+                    <span data-i18n="card4_v2" class="text-emerald-400 font-semibold">Clean, Modern & Intuitive</span>
                   </div>
                 </div>
               </div>
@@ -329,7 +356,7 @@
           </a>
         </div>
 
-        <!-- Service 2: Web Design & Development -->
+        <!-- Service 2 -->
         <div class="group p-8 rounded-2xl bg-white border border-slate-200 hover:border-brand-500 hover:shadow-xl hover:shadow-slate-200/50 transition-all duration-300">
           <div class="w-12 h-12 rounded-xl bg-brand-50 text-brand-600 flex items-center justify-center mb-6 group-hover:bg-brand-600 group-hover:text-white transition-colors">
             <i data-lucide="globe" class="w-6 h-6"></i>
@@ -550,21 +577,44 @@
         slide1_desc: "TechCandleBD crafts robust digital platforms, custom software, and enterprise systems that accelerate business growth with ultimate precision.",
         btn_start: "Start Your Project",
         btn_explore: "Explore Capabilities",
-        code_custom_engine: "Custom Software Engine",
-        code_status_active: "Active",
-        code_status_connected: "Connected",
+        card1_stack: "Tech Stack",
+        card1_stack_val: "Modern & Scalable",
+        card1_process: "Development Process",
+        card1_process_val: "Agile & Transparent",
         slide2_badge: "Web Design & Development",
         slide2_title: "Modern, Scalable & Responsive Websites.",
         slide2_desc: "Building conversion-optimized, fast, and SEO-friendly web applications and websites designed to elevate your online brand identity.",
         btn_web_sol: "Explore Web Solutions",
+        card2_head: "Web Standard Checklist",
+        card2_badge: "Best Practices",
+        card2_f1: "Responsive Layouts:",
+        card2_v1: "Mobile-First Focus ✓",
+        card2_f2: "Page Speed:",
+        card2_v2: "Fast Loading Code ✓",
+        card2_f3: "SEO & Security Standards:",
+        card2_v3: "Built-in Essentials ✓",
         slide3_badge: "Cross-Platform Mobile Apps",
         slide3_title: "High-Performance Mobile Solutions.",
         slide3_desc: "Deliver seamless user experiences across iOS and Android platforms using unified codebases optimized for speed and reliability.",
         btn_mobile_sol: "Mobile App Solutions",
+        card3_head: "Flutter Architecture",
+        card3_badge: "Cross-Platform",
+        card3_f1: "Single Codebase Support:",
+        card3_v1: "Android & iOS ✓",
+        card3_f2: "User Interface:",
+        card3_v2: "Smooth & Native Feel ✓",
+        card3_f3: "Code Maintainability:",
+        card3_v3: "Clean Architecture ✓",
         slide4_badge: "Enterprise UI/UX Design",
         slide4_title: "Research-Driven UI/UX Design.",
         slide4_desc: "Creating intuitive, user-centered interface designs focused on clarity, high conversion efficiency, and seamless brand experiences.",
         btn_audit: "Request Design Audit",
+        card4_head: "Design Focus & Standards",
+        card4_badge: "User-Centric",
+        card4_f1: "Prototyping & Flow",
+        card4_v1: "Interactive Mockups",
+        card4_f2: "Design Objective",
+        card4_v2: "Clean, Modern & Intuitive",
         client_title: "Proudly Engineering Solutions For Industry Leaders",
         services_subtitle: "Our Core Expertise",
         services_title: "Four Pillars of Excellence",
@@ -620,21 +670,44 @@
         slide1_desc: "টেকক্যান্ডেলবিডি তৈরি করে আধুনিক ডিজিটাল প্ল্যাটফর্ম ও কাস্টম সফটওয়্যার, যা আপনার ব্যবসায়ের প্রবৃদ্ধি নিশ্চিত করে।",
         btn_start: "প্রজেক্ট শুরু করুন",
         btn_explore: "সার্ভিসসমূহ দেখুন",
-        code_custom_engine: "কাস্টম সফটওয়্যার ইঞ্জিন",
-        code_status_active: "সক্রিয়",
-        code_status_connected: "সংযুক্ত",
+        card1_stack: "টেক স্ট্যাক",
+        card1_stack_val: "আধুনিক ও স্কেলেবল",
+        card1_process: "ডেভেলপমেন্ট প্রসেস",
+        card1_process_val: "স্বচ্ছ ও এজাইল",
         slide2_badge: "ওয়েব ডিজাইন ও ডেভেলপমেন্ট",
         slide2_title: "আধুনিক, রেসপনসিভ ও স্কেলেবল ওয়েব সল্যুশন।",
         slide2_desc: "দ্রুতগতির, এসইও-বান্ধব এবং ইউজার-ফ্রেন্ডলি ওয়েবসাইট ও ওয়েব অ্যাপ্লিকেশন তৈরি যা আপনার অনলাইন উপস্থিতি বৃদ্ধি করে।",
         btn_web_sol: "ওয়েব সল্যুশন দেখুন",
+        card2_head: "ওয়েব স্ট্যান্ডার্ড চেকলিস্ট",
+        card2_badge: "সেরা চর্চা",
+        card2_f1: "রেসপনসিভ লেআউট:",
+        card2_v1: "মোবাইল-ফার্স্ট ফোকাস ✓",
+        card2_f2: "পেজ স্পিড:",
+        card2_v2: "দ্রুতগতির কোড ✓",
+        card2_f3: "এসইও ও সিকিউরিটি:",
+        card2_v3: "মানসম্মত বিল্ট-ইন ✓",
         slide3_badge: "ক্রস-প্ল্যাটফর্ম মোবাইল অ্যাপস",
         slide3_title: "উচ্চ পারফরম্যান্সের মোবাইল অ্যাপ।",
         slide3_desc: "iOS এবং অ্যান্ড্রয়েডের জন্য দ্রুত ও নির্ভরযোগ্য সিঙ্গেল-কোডবেস ফ্লটার অ্যাপ্লিকেশন।",
         btn_mobile_sol: "মোবাইল অ্যাপ সল্যুশন",
+        card3_head: "ফ্লটার আর্কিটেকচার",
+        card3_badge: "ক্রস-প্ল্যাটফর্ম",
+        card3_f1: "সিঙ্গেল কোডবেস সাপোর্ট:",
+        card3_v1: "অ্যান্ড্রয়েড ও iOS ✓",
+        card3_f2: "ইউজার ইন্টারফেস:",
+        card3_v2: "স্মুথ ও নেটিভ অনুভূতি ✓",
+        card3_f3: "কোড রক্ষণাবেক্ষণ:",
+        card3_v3: "ক্লিন আর্কিটেকচার ✓",
         slide4_badge: "এন্টারপ্রাইজ UI/UX ডিজাইন",
         slide4_title: "গবেষণানির্ভর আধুনিক UI/UX ডিজাইন।",
         slide4_desc: "সহজ ও আকর্ষণীয় ইন্টারফেস যা ব্যবহারকারীর অভিজ্ঞতা বাড়ায় এবং ব্র্যান্ডের বিশ্বাসযোগ্যতা বৃদ্ধি করে।",
         btn_audit: "ডিজাইন অডিট চান",
+        card4_head: "ডিজাইন ফোকাস ও মানদণ্ড",
+        card4_badge: "ইউজার-সেন্ট্রিক",
+        card4_f1: "প্রোটোটাইপিং ও ফ্লো",
+        card4_v1: "ইন্টারঅ্যাক্টিভ মকআপ",
+        card4_f2: "ডিজাইনের মূল লক্ষ্য",
+        card4_v2: "ক্লিন, আধুনিক ও সহজ",
         client_title: "শিল্পের শীর্ষস্থানীয় প্রতিষ্ঠানের জন্য নির্ভরযোগ্য বিশ্বস্ত পার্টনার",
         services_subtitle: "আমাদের মূল দক্ষতা",
         services_title: "সেবার প্রধান ৪টি স্তম্ভ",
