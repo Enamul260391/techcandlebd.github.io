@@ -20,9 +20,6 @@
       width: max-content;
       animation: infinite-scroll 25s linear infinite;
     }
-    .animate-infinite-scroll:hover {
-      animation-play-state: paused;
-    }
   </style>
   <script>
     tailwind.config = {
@@ -347,7 +344,7 @@
 
     <!-- 3 Column Moving Continuous Carousel -->
     <div class="w-full overflow-hidden mt-2">
-      <div class="animate-infinite-scroll gap-6 px-4">
+      <div id="project-carousel" class="animate-infinite-scroll gap-6 px-4">
         
         <!-- FIRST SET OF CARDS -->
         <!-- Project 1: Umrah Booking Service -->
@@ -843,7 +840,7 @@
         card3_f1: "সিঙ্গেল কোডবেস সাপোর্ট:",
         card3_v1: "অ্যান্ড্রয়েড ও iOS ✓",
         card3_f2: "ইউজার ইন্টারফেস:",
-        card3_v2: "স্মুথ ও নেটিভ অনুভূতি ✓",
+        card3_v2: "স্মউথ ও নেটিভ অনুভূতি ✓",
         card3_f3: "কোড রক্ষণাবেক্ষণ:",
         card3_v3: "ক্লিন আর্কিটেকচার ✓",
         slide4_badge: "এন্টারপ্রাইজ UI/UX ডিজাইন",
@@ -899,7 +896,7 @@
         faq1_a: "আমরা কাস্টম সফটওয়্যার ডেভেলপমেন্ট, ওয়েব ডিজাইন ও ডেভেলপমেন্ট, ক্রস-প্ল্যাটফর্ম মোবাইল অ্যাপস (Flutter), এবং এন্টারপ্রাইজ UI/UX ডিজাইন সার্ভিস প্রদান করি।",
         faq2_q: "আপনারা মেধা সম্পত্তি (IP) এবং ডেটা সুরক্ষা কীভাবে নিশ্চিত করেন?",
         faq2_a: "আপনার প্রজেক্টের ১০০% আইপি অধিকার আপনারই থাকবে। আমরা চুক্তির মাধ্যমে সর্বোচ্চ গোপনীয়তা রক্ষা করি।",
-        faq3_q: "প্রজেক্ট ডেলিভারির পর সাপোর্ট সিস্টেম কেমন?",
+        faq3_q: "প্রজেক্ট ডেলিভারির পর সাপোর্ট সাপোর্ট সিস্টেম কেমন?",
         faq3_a: "আমরা নিয়মিত সিস্টেম মনিটরিং, বাগ ফিক্সিং এবং ডেডিকেটেড টেকনিক্যাল মেইনটেনেন্স সাপোর্ট দিয়ে থাকি।",
         contact_subtitle: "যোগাযোগ করুন",
         contact_title: "আপনার পরবর্তী প্রজেক্ট নিয়ে আলোচনা শুরু করি।",
@@ -983,6 +980,23 @@
       dot.addEventListener('click', () => { showSlide(index); resetAutoSlide(); });
     });
     startAutoSlide();
+
+    // Project Carousel Pause/Resume Logic (Fixed for Mobile & Desktop Taps)
+    const projectCarousel = document.getElementById('project-carousel');
+    let isCarouselPaused = false;
+
+    function toggleCarouselAnimation(e) {
+      e.stopPropagation();
+      if (!isCarouselPaused) {
+        projectCarousel.style.animationPlayState = 'paused';
+        isCarouselPaused = true;
+      } else {
+        projectCarousel.style.animationPlayState = 'running';
+        isCarouselPaused = false;
+      }
+    }
+
+    projectCarousel.addEventListener('click', toggleCarouselAnimation);
 
     // FAQ Accordion Script
     const faqButtons = document.querySelectorAll('.faq-btn');
